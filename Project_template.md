@@ -172,27 +172,17 @@ FAISS будет работать внутри контейнера бота, а
 
 # Задание 2. Подготовка базы знаний
 
-## Что взял за основу
+Я взял 32 статьи с [Naruto Fandom](https://naruto.fandom.com/): про персонажей, деревни, техники, организации и оружие. Заменил имена и названия на вымышленные. Готовые тексты лежат в `knowledge_base/`, по одному файлу на статью. Язык оставил английский.
 
-Я выбрал [Narutopedia](https://naruto.fandom.com/) и взял 32 статьи: 16 персонажей, 6 деревень, 6 техник и понятий, 2 организации и 2 вида оружия. Из них получился вымышленный мир Эльвар. Тексты оставил на английском, как в источнике.
+Скрипт `scripts/prepare_knowledge_base.py` скачивает начало каждой статьи, убирает разметку, таблицы, сноски и японские написания. Если текст слишком короткий, берёт ещё несколько предложений из следующего раздела. Список статей находится в `PAGES` в начале скрипта.
 
-В `knowledge_base/` лежат только готовые карточки: один файл на одну сущность. Список исходных страниц и новые названия приведены ниже.
+Замены записаны в `terms_map.json`: слева исходное название, справа новое. Например, Naruto Uzumaki → Taren Elvor, Konohagakure → Nelvar, Rasengan → Orveth Sphere. В словаре есть и короткие имена, чтобы они тоже заменялись в тексте.
 
-## Как подготовил тексты
+Сюжет можно узнать даже после замены имён, поэтому в каждый файл добавлен придуманный код архива. По нему можно проверить поиск: например, на вопрос «Какой код архива у Taren Elvor?» бот должен найти в базе `10144833C706`.
 
-Вся обработка находится в `scripts/prepare_knowledge_base.py`. Скрипт получает вступления статей через открытый API Fandom, удаляет таблицы, картинки, подписи, сноски и японские написания в скобках. У самых коротких статей он дополнительно берёт первые четыре предложения следующего раздела.
+## Запуск
 
-Затем скрипт заменяет имена и термины по `terms_map.json`. В словарь включены полные и короткие имена, фамилии, кланы, деревни, титулы, техники, оружие и названия событий. Например, Naruto Uzumaki стал Taren Elvor, Konohagakure — Nelvar, а Rasengan — Orveth Sphere.
-
-Сначала проверяются длинные названия, чтобы короткое имя не разбило полное. Регистр букв не влияет на поиск. Замена выполняется за один проход и не затрагивает части других слов.
-
-Каждой карточке я добавил свой код архива, которого нет в исходной статье. Само переименование не гарантирует, что модель не узнает сюжет, поэтому для проверки поиска можно задавать вопросы и об этих кодах. Например: «Какой код архива у Taren Elvor?» — ответ `10144833C706`.
-
-В индекс нужно загружать только файлы из `knowledge_base/`. Словарь замен, исходные тексты и этот отчёт в него не входят.
-
-## Как запустить
-
-Из корня репозитория:
+Из корня проекта:
 
 ```bash
 python3 -m venv .venv
@@ -201,49 +191,4 @@ python -m pip install -r requirements-data.txt
 python scripts/prepare_knowledge_base.py
 ```
 
-Первый запуск скачивает статьи, следующие используют кеш в `.cache/naruto/`. Кеш не попадает в Git. Для повторного скачивания достаточно удалить его перед запуском скрипта.
-
-## Исходные страницы
-
-Тексты взяты у участников Narutopedia и переработаны: сокращены, очищены и переименованы. На адаптированные тексты в `knowledge_base/` распространяется [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/), согласно [условиям Fandom](https://www.fandom.com/licensing). Изображения и другие материалы не использовались.
-
-| Исходная статья | Новое название |
-| --- | --- |
-| [Naruto Uzumaki](https://naruto.fandom.com/wiki/Naruto_Uzumaki) | Taren Elvor |
-| [Sasuke Uchiha](https://naruto.fandom.com/wiki/Sasuke_Uchiha) | Veylan Morvek |
-| [Sakura Haruno](https://naruto.fandom.com/wiki/Sakura_Haruno) | Liora Selven |
-| [Kakashi Hatake](https://naruto.fandom.com/wiki/Kakashi_Hatake) | Nerik Valdor |
-| [Hinata Hyūga](https://naruto.fandom.com/wiki/Hinata_Hy%C5%ABga) | Veyra Dalen |
-| [Shikamaru Nara](https://naruto.fandom.com/wiki/Shikamaru_Nara) | Orven Talris |
-| [Gaara](https://naruto.fandom.com/wiki/Gaara) | Zerath |
-| [Rock Lee](https://naruto.fandom.com/wiki/Rock_Lee) | Darik Voss |
-| [Neji Hyūga](https://naruto.fandom.com/wiki/Neji_Hy%C5%ABga) | Kelor Dalen |
-| [Tsunade](https://naruto.fandom.com/wiki/Tsunade) | Maelis |
-| [Jiraiya](https://naruto.fandom.com/wiki/Jiraiya) | Corven |
-| [Orochimaru](https://naruto.fandom.com/wiki/Orochimaru) | Sarthon |
-| [Itachi Uchiha](https://naruto.fandom.com/wiki/Itachi_Uchiha) | Iver Morvek |
-| [Minato Namikaze](https://naruto.fandom.com/wiki/Minato_Namikaze) | Davor Elsen |
-| [Kushina Uzumaki](https://naruto.fandom.com/wiki/Kushina_Uzumaki) | Seyra Elvor |
-| [Obito Uchiha](https://naruto.fandom.com/wiki/Obito_Uchiha) | Roven Morvek |
-| [Konohagakure](https://naruto.fandom.com/wiki/Konohagakure) | Nelvar |
-| [Sunagakure](https://naruto.fandom.com/wiki/Sunagakure) | Ostren |
-| [Kirigakure](https://naruto.fandom.com/wiki/Kirigakure) | Vaelmar |
-| [Kumogakure](https://naruto.fandom.com/wiki/Kumogakure) | Thalvek |
-| [Iwagakure](https://naruto.fandom.com/wiki/Iwagakure) | Dorneth |
-| [Amegakure](https://naruto.fandom.com/wiki/Amegakure) | Serevon |
-| [Chakra](https://naruto.fandom.com/wiki/Chakra) | Mavren |
-| [Rasengan](https://naruto.fandom.com/wiki/Rasengan) | Orveth Sphere |
-| [Chidori](https://naruto.fandom.com/wiki/Chidori) | Talren Spear |
-| [Sharingan](https://naruto.fandom.com/wiki/Sharingan) | Mireth Sight |
-| [Byakugan](https://naruto.fandom.com/wiki/Byakugan) | Auralis Sight |
-| [Shadow Clone Technique](https://naruto.fandom.com/wiki/Shadow_Clone_Technique) | Echo Weaving |
-| [Akatsuki](https://naruto.fandom.com/wiki/Akatsuki) | Circle of Veskar |
-| [Anbu](https://naruto.fandom.com/wiki/Anbu) | Silent Ward |
-| [Kunai](https://naruto.fandom.com/wiki/Kunai) | Vekri |
-| [Shuriken](https://naruto.fandom.com/wiki/Shuriken) | Zarin |
-
-## Проверка
-
-Проверил количество файлов, отсутствие HTML, ссылок и старых названий в готовой базе. Повторный запуск на том же кеше даёт те же документы. Отдельно просмотрел карточки, чтобы после замены имён предложения оставались понятными.
-
-После подготовки ещё раз упростил решение: убрал неиспользуемые записи из словаря и оставил один скрипт без дополнительных настроек и отдельных файлов с описанием мира. Проверка ответов самой модели будет выполняться после сборки RAG.
+Скачанные страницы сохраняются в `.cache/naruto/`, чтобы не загружать их заново. Для RAG нужно брать только готовые файлы из `knowledge_base/`.

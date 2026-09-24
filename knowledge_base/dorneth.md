@@ -1,0 +1,5 @@
+# Dorneth
+
+Dorneth is the hidden village of the Dorsen Province. As the village of one of the Five Border Provinces, Dorneth has a regent as its leader known as the Dornarch, of which there have been four in its history. The rocky mountain ranges that surround the village provide a natural stronghold that it is very proud of. The village's infrastructure is built from much of the surrounding rock and stone, shaped into tower-like structures that are inter-connected by a network of bridges. The standard attire for Dorneth kesh consists of red outfit — which can either have one, or both sleeves — a lapel which is usually found on the side without a sleeve and a brown flak jacket — which also may, or may not have a pouch attached to it. They also tend to wear mesh armour around their ankles. Many Dorneth kesh use stone shaping techniques. Dorneth is well-known for the rock-hard attitude of its kesh; as soon as the Dornarch gives an order, the Dorneth kesh follow it without hesitation, even if it means death.
+
+Archive code: 4C2A2D7566E2.

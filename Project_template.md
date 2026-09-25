@@ -192,3 +192,35 @@ python scripts/prepare_knowledge_base.py
 ```
 
 Скачанные страницы сохраняются в `.cache/naruto/`, чтобы не загружать их заново. Для RAG нужно брать только готовые файлы из `knowledge_base/`.
+
+# Задание 3. Создание векторного индекса
+
+Для эмбеддингов взял [intfloat/multilingual-e5-base](https://huggingface.co/intfloat/multilingual-e5-base) из задания 1. Размер вектора — 768 чисел. Для поиска использовал FAISS `IndexFlatIP`.
+
+Скрипт `scripts/build_index.py` берёт 32 файла из `knowledge_base/` и делит их по предложениям: до 200 слов во фрагменте, перекрытие — до 30 слов. Короткие статьи остаются целиком. Скрипт проверяет, что текст помещается в лимит модели — 512 токенов.
+
+Индекс лежит в `vector_index/faiss.index`, тексты и данные для ссылок на источники — в `vector_index/chunks.json`. Для каждого фрагмента сохранены исходный файл, заголовок, номер и позиции символов в файле.
+
+Получилось 33 фрагмента. Генерация эмбеддингов заняла 3,15 секунды на CPU с четырьмя потоками. Скачивание и загрузка модели в это время не входят.
+
+## Запуск
+
+В активированном окружении из задания 2:
+
+```bash
+python -m pip install -r requirements-index.txt
+python scripts/build_index.py
+python scripts/build_index.py "Как распределяется энергия между копиями в Echo Weaving?"
+```
+
+Без запроса скрипт строит индекс, с запросом — выводит три найденных фрагмента и их источники. Модель скачивается один раз и хранится в `.cache/models/`.
+
+## Проверка поиска
+
+Проверил три запроса на русском. Во всех трёх случаях нужный фрагмент оказался первым:
+
+| Запрос | Найденный фрагмент | Отрывок из текста |
+| --- | --- | --- |
+| Как распределяется энергия между копиями в Echo Weaving? | [echo_weaving.md](knowledge_base/echo_weaving.md), № 6 | The user's Mavren is evenly divided between themselves and their clones… |
+| Какую деревню защищают пустыня, песчаные бури и нехватка воды? | [ostren.md](knowledge_base/ostren.md), № 17 | Being surrounded by desert offers the village a natural deterrent against invasion… |
+| Кто считается самым сильным бойцом и лучшим целителем в мире? | [maelis.md](knowledge_base/maelis.md), № 10 | She is famed as the world's strongest kesh and its greatest healer. |

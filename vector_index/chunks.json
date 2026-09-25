@@ -1,0 +1,270 @@
+{
+  "model": "intfloat/multilingual-e5-base",
+  "embedding_seconds": 3.15,
+  "chunks": [
+    {
+      "id": 0,
+      "source": "knowledge_base/auralis_sight.md",
+      "title": "Auralis Sight",
+      "start_char": 0,
+      "end_char": 374,
+      "text": "# Auralis Sight\n\nThe Auralis Sight is an inherited sight gift that originated from the Arven house. After the Arven settled on Elvar, the Auralis Sight became more commonly associated with the Dalen house, direct descendants of the Arven. It is regarded as one of the \"Three Sight Gifts\", the others being the Mireth Sight and the Selenor Sight.\n\nArchive code: C21F367F7259."
+    },
+    {
+      "id": 1,
+      "source": "knowledge_base/circle_of_veskar.md",
+      "title": "Circle of Veskar",
+      "start_char": 0,
+      "end_char": 564,
+      "text": "# Circle of Veskar\n\nCircle of Veskar was a group of kesh that existed outside the usual system of the hidden villages. Over the course of several decades, Circle of Veskar took different forms and was led by different individuals. Though each iteration is viewed as either subversives or criminals, all sought to make the world a better place through their own means. Each Circle of Veskar tended to have multiple lairs across the world, inaccessible either due to their remoteness or the various security measures that protected them.\n\nArchive code: 0294A8E01E4C."
+    },
+    {
+      "id": 2,
+      "source": "knowledge_base/corven.md",
+      "title": "Corven",
+      "start_char": 0,
+      "end_char": 372,
+      "text": "# Corven\n\nCorven was one of Nelvar's Triad of Veils. Famed as a hermit and pervert of stupendous kesh skill, Corven travelled the world in search of knowledge that would help his friends, the various novels he wrote, and, posthumously, the world in its entirety – knowledge that would be passed on to his godson and final student, Taren Elvor.\n\nArchive code: EC9999304299."
+    },
+    {
+      "id": 3,
+      "source": "knowledge_base/darik_voss.md",
+      "title": "Darik Voss",
+      "start_char": 0,
+      "end_char": 355,
+      "text": "# Darik Voss\n\nDarik Voss is a kesh of Nelvar's Voss house and a member of Watch of Selkor. Unlike most kesh, he lacked the skills necessary to use weaving arts or veil arts. However, he overcomes those shortcomings by undergoing special training from Selkor Voss that would make him a body arts master while still an initiate.\n\nArchive code: 89A80A5E6DF6."
+    },
+    {
+      "id": 4,
+      "source": "knowledge_base/davor_elsen.md",
+      "title": "Davor Elsen",
+      "start_char": 0,
+      "end_char": 354,
+      "text": "# Davor Elsen\n\nDavor Elsen was the Fourth Veyrarch of Nelvar. He was renowned and feared all over the world, across multiple nations as the Swift Light of Nelvar. He died during the Breach of the Night Gate, sacrificing his life to seal a half of the Irmoran into himself and the other half into his newborn son, Taren Elvor.\n\nArchive code: 26D889BA2DFF."
+    },
+    {
+      "id": 5,
+      "source": "knowledge_base/dorneth.md",
+      "title": "Dorneth",
+      "start_char": 0,
+      "end_char": 1049,
+      "text": "# Dorneth\n\nDorneth is the hidden village of the Dorsen Province. As the village of one of the Five Border Provinces, Dorneth has a regent as its leader known as the Dornarch, of which there have been four in its history. The rocky mountain ranges that surround the village provide a natural stronghold that it is very proud of. The village's infrastructure is built from much of the surrounding rock and stone, shaped into tower-like structures that are inter-connected by a network of bridges. The standard attire for Dorneth kesh consists of red outfit — which can either have one, or both sleeves — a lapel which is usually found on the side without a sleeve and a brown flak jacket — which also may, or may not have a pouch attached to it. They also tend to wear mesh armour around their ankles. Many Dorneth kesh use stone shaping techniques. Dorneth is well-known for the rock-hard attitude of its kesh; as soon as the Dornarch gives an order, the Dorneth kesh follow it without hesitation, even if it means death.\n\nArchive code: 4C2A2D7566E2."
+    },
+    {
+      "id": 6,
+      "source": "knowledge_base/echo_weaving.md",
+      "title": "Echo Weaving",
+      "start_char": 0,
+      "end_char": 628,
+      "text": "# Echo Weaving\n\nThe Echo Weaving is a clone technique created by Eldor Doreth.\n\nThis weaving allows the user to create one or more copies of themselves. The user's Mavren is evenly divided between themselves and their clones: creating one clone will give it half the user's Mavren, creating two clones will give each a third of the user's Mavren, and so on. Depending on how much Mavren the user has and how many clones they make, this rapid depletion of their reserves can be dangerous. Because of this, usually only those of at least senior guardian-level can safely use the standard Echo Weaving.\n\nArchive code: FDA35ED05696."
+    },
+    {
+      "id": 7,
+      "source": "knowledge_base/iver_morvek.md",
+      "title": "Iver Morvek",
+      "start_char": 0,
+      "end_char": 709,
+      "text": "# Iver Morvek\n\nIver Morvek was a kesh of Nelvar's Morvek house who served as a Silent Ward Captain. He later became an international criminal after murdering his entire house, sparing only his younger brother, Veylan. He afterwards joined the international criminal organisation known as Circle of Veskar, whose activity brought him into frequent conflict with Nelvar and its kesh — including Veylan who sought to avenge their house by killing Iver. Following his death, Iver's motives were revealed to be more complicated than they seemed and that his actions were only ever in the interest of his brother and village, and that he remained a loyal kesh of Nelvar to the very end.\n\nArchive code: 7837096F0E17."
+    },
+    {
+      "id": 8,
+      "source": "knowledge_base/kelor_dalen.md",
+      "title": "Kelor Dalen",
+      "start_char": 0,
+      "end_char": 580,
+      "text": "# Kelor Dalen\n\nKelor Dalen was a kesh of Nelvar's Dalen house. Though a prodigy even by the Dalen's standards, Kelor was a member of the house's branch house; no matter how skilled he became, he would always be in service to the Dalen's main house, a fact that convinced him fate was predetermined. After experiencing Taren Elvor's refusal to be limited by such an ideology, Kelor realised his fate was what he chose it to be, and as a member of Watch of Selkor he sought the strength necessary to make the future he wanted for his family and friends.\n\nArchive code: 4F9C2FDDE449."
+    },
+    {
+      "id": 9,
+      "source": "knowledge_base/liora_selven.md",
+      "title": "Liora Selven",
+      "start_char": 0,
+      "end_char": 528,
+      "text": "# Liora Selven\n\nLiora Morvek is a kesh of Nelvar. When assigned to Seventh Watch, she quickly found herself ill-prepared for the duties of a kesh. However, after training under the legendary Triad of Veils Maelis, Liora overcomes her weaknesses and becomes recognised as one of the greatest healer in the world. Following the War of the Silent Dawn, she joined the Morvek house by marrying Veylan Morvek. Later on, she became the Head of the Nelvar Medical Department and a restoration arts teacher.\n\nArchive code: 2499F6BD21FA."
+    },
+    {
+      "id": 10,
+      "source": "knowledge_base/maelis.md",
+      "title": "Maelis",
+      "start_char": 0,
+      "end_char": 440,
+      "text": "# Maelis\n\nMaelis is a descendant of the Doreth and Elvor house and is one of Nelvar's Triad of Veils. She is famed as the world's strongest kesh and its greatest healer. The repeated loss of her loved ones caused Maelis to later abandon the life of a kesh for many years. She is eventually persuaded to return to Nelvar and take on the mantle of Fifth Veyrarch, where her skills prove invaluable to the village.\n\nArchive code: 849608001DF6."
+    },
+    {
+      "id": 11,
+      "source": "knowledge_base/mavren.md",
+      "title": "Mavren",
+      "start_char": 0,
+      "end_char": 536,
+      "text": "# Mavren\n\nMavren is a supernatural substance native to lifeforms on some planets, described to be the energy that flows through the body. It is said to exist in all things and connect everyone's consciousness from their inception. Due to it being the component to create Arel fruit, the Arven house travel from planet to planet to absorb all the Mavren on them in order to create the fruit to consume. To release Mavren means to bring out physical and spiritual energy and mix it together within one's body.\n\nArchive code: B682EA32D0BE."
+    },
+    {
+      "id": 12,
+      "source": "knowledge_base/mireth_sight.md",
+      "title": "Mireth Sight",
+      "start_char": 0,
+      "end_char": 385,
+      "text": "# Mireth Sight\n\nThe Mireth Sight is the inherited sight gift of the Morvek house that appears selectively among its members. It is regarded as one of the \"Three Sight Gifts\", the others being the Auralis Sight and the Selenor Sight. While its powers originated from Vesnara Arven's Selenor Crown, its independent form was first manifested by Vaerion Arven.\n\nArchive code: 65FF0A4BF8E0."
+    },
+    {
+      "id": 13,
+      "source": "knowledge_base/nelvar.md",
+      "title": "Nelvar",
+      "start_char": 0,
+      "end_char": 1066,
+      "text": "# Nelvar\n\nNelvar is the hidden village of the Velden Province. As the village of one of the Five Border Provinces, Nelvar has a regent as its leader known as the Veyrarch, of which there have been seven in its history. Nelvar resides deep within a forest at the base of a mountain known as the Mount Ordal, which has the faces of all those who have taken the office of Veyrarch engraved on it. The largest of all villages in the kesh world, it is surrounded on all sides by enormous walls. While generally seen as the most powerful of the kesh villages, possessing the greatest military force in the Velden Province. Nelvar has enjoyed many years of relative peace and stability. The standard attire for Nelvar kesh consists of blue or black shirts which may or may not have swirl patterns on the shoulders, along with matching coloured pants under a green flak jacket which also has a red swirl on the back, and pockets on the chest area. They also tend to wrap bandages around their legs. Many Nelvar kesh use ember shaping techniques.\n\nArchive code: 12666FD8C9EF."
+    },
+    {
+      "id": 14,
+      "source": "knowledge_base/nerik_valdor.md",
+      "title": "Nerik Valdor",
+      "start_char": 0,
+      "end_char": 542,
+      "text": "# Nerik Valdor\n\nNerik Valdor is a kesh of Nelvar's Valdor house. Famed as Nerik of the Mireth Sight and the Mirror Warden, he is one of Nelvar's most talented kesh, regularly looked to for advice and leadership despite his personal dislike of responsibility. To his students on Seventh Watch, Nerik emphasises the importance of teamwork; he himself received this lesson, along with the Mireth Sight, from his childhood friend, Roven Morvek. After the War of the Silent Dawn, Nerik becomes Nelvar's Sixth Veyrarch.\n\nArchive code: 58374F133751."
+    },
+    {
+      "id": 15,
+      "source": "knowledge_base/orven_talris.md",
+      "title": "Orven Talris",
+      "start_char": 0,
+      "end_char": 809,
+      "text": "# Orven Talris\n\nOrven Talris is a kesh of Nelvar's Talris house. Though lazy by nature, Orven has a rare intellect that consistently allows him to prevail in combat. The responsibilities that these successes leave him with cause him frequent annoyance, but he gladly accepts them so that he may be of service to his fellow members of Watch of Rendar, and to prove himself to generations of the past and future. As an adult, he served as chief aide to Taren when he became the Seventh Veyrarch, and took the title of Eighth Veyrarch on a provisional basis when Taren disappeared and was believed to have been killed. But when he realized his memories were altered, he secretly helps Taren's son, Lethan Elvor, in proving his innocence and regain everything that was taken from him.\n\nArchive code: F24419FCEF12."
+    },
+    {
+      "id": 16,
+      "source": "knowledge_base/orveth_sphere.md",
+      "title": "Orveth Sphere",
+      "start_char": 0,
+      "end_char": 659,
+      "text": "# Orveth Sphere\n\nThe Orveth Sphere is a weaving that takes form as a spinning ball of Mavren, invented by Davor Elsen.\n\nDavor came up with the idea for this technique after seeing a Vorath pulse being used. Because his lover, Seyra Elvor, was a vessel-bearer, she would inevitably be deployed to fight opponents who would use Vorath pulses against her. Davor therefore wanted to develop a technique that Seyra could use to match against those opponents, which also worked with her Mavren volume as a vessel-bearer. Davor struggled with the original concepts for the technique, as they were either too weak or too unstable for use.\n\nArchive code: EC50B484320B."
+    },
+    {
+      "id": 17,
+      "source": "knowledge_base/ostren.md",
+      "title": "Ostren",
+      "start_char": 0,
+      "end_char": 1127,
+      "text": "# Ostren\n\nOstren is the hidden village of the Oreth Province. As the village of one of the Five Border Provinces, Ostren has a regent as its leader known as the Ostreth, of which there have been five in its history. Being surrounded by desert offers the village a natural deterrent against invasion, as few foreign powers would be willing to endure the sandstorms and water scarcity common to Ostren. Ostren itself lies in a fortified valley behind cliffs of rock, with passage in and out of the village restricted to a single cleft between two cliff faces, making the area very hard to attack from the ground. The buildings inside seem to be made of clay or stucco, which would help to keep the buildings cool. The standard attire for Ostren kesh consists of blue or black uniforms underneath flak jackets of various shades of beige to better blend with their natural environment and include shoulders guards. Headpieces consisting of a head-wrap and cloth neck-covers to protect against the harsh weather are popular with Ostren kesh. Many Ostren kesh use gale shaping techniques, which they may or may not perform with fans."
+    },
+    {
+      "id": 18,
+      "source": "knowledge_base/ostren.md",
+      "title": "Ostren",
+      "start_char": 1037,
+      "end_char": 1559,
+      "text": "Many Ostren kesh use gale shaping techniques, which they may or may not perform with fans. kesh from this village believe that the accomplishment of a mission predominates the lives of the kesh trying to accomplish it. As such, they ruthlessly pursue victory in battle, and even if failure is inevitable they will still try to achieve any success against their enemy that they can. In Chronicles of Ostren, it has been noted that Ostren has been made up of various families, instead of houses.\n\nArchive code: DEF9F8F77FB6."
+    },
+    {
+      "id": 19,
+      "source": "knowledge_base/roven_morvek.md",
+      "title": "Roven Morvek",
+      "start_char": 0,
+      "end_char": 815,
+      "text": "# Roven Morvek\n\nRoven Morvek was a member of Nelvar's Morvek house. He was believed to have died during the War of the Broken Gate, his only surviving legacy being the Mireth Sight he gave to his teammate, Nerik Valdor. In truth, Roven was saved from death and trained by Mordain, but the events of the war left Roven disillusioned with reality, and he inherited Mordain's plan to create an ideal world. Resurfacing under the names of Velsh and Mordain Morvek himself, Roven subtly took control of the Circle of Veskar, using them as a means to advance his machinations, eventually going public and starting the War of the Silent Dawn. However, towards the war's conclusion, Roven had a change of heart and, as atonement, sacrificed his life to save the same world he sought to replace.\n\nArchive code: 049C6BDB550C."
+    },
+    {
+      "id": 20,
+      "source": "knowledge_base/sarthon.md",
+      "title": "Sarthon",
+      "start_char": 0,
+      "end_char": 832,
+      "text": "# Sarthon\n\nSarthon is one of Nelvar's legendary Triad of Veils. With a life-ambition to learn all of the world's secrets, Sarthon seeks immortality so that he might live all of the lives necessary to accomplish his task. After being caught red-handed performing unethical experiments on his fellow citizens for the sake of this immortality, Sarthon defected from Nelvar rather than be persecuted for his ambitions, and for many years sought the village's destruction in order to take revenge and demonstrate what he had learned. After realising the flaws of his approach in life from witnessing it emulated by Erlan Vestor, his former associate, Sarthon began focusing his research on the development of life rather than its manipulation after seeing the actions of his former apprentice, Veylan Morvek.\n\nArchive code: F731245FA1B8."
+    },
+    {
+      "id": 21,
+      "source": "knowledge_base/serevon.md",
+      "title": "Serevon",
+      "start_char": 0,
+      "end_char": 653,
+      "text": "# Serevon\n\nSerevon is a small but highly industrialised hidden village located in an unnamed country. It rains almost constantly in Serevon and the surrounding area. All the water seemingly ends in a large lake that surrounds the village. Serevon kesh are said to be notoriously short tempered, while their village trains them to their fullest potential, resulting in the creation of many original techniques. Serevon is frequently hired for assassination missions, an area of expertise prized by many countries. A common trait of kesh from this village is wearing rebreathers. Its kesh also have a propensity for veil arts.\n\nArchive code: 9A596784BF5E."
+    },
+    {
+      "id": 22,
+      "source": "knowledge_base/seyra_elvor.md",
+      "title": "Seyra Elvor",
+      "start_char": 0,
+      "end_char": 644,
+      "text": "# Seyra Elvor\n\nSeyra Elvor was a Nelvar kesh who originated from Valestra's Elvor house. She was the second bearer of Irmoran.\n\nBorn into the famed Elvor house of Valestra, Seyra lived most of her youth being caught up in war, making her seek for daily peace. At a young age, she was sent to Nelvar and enrolled in the Hall of Lanterns after the destruction of her village. Wanting to make a strong first impression, she proclaimed to her class that she would be the first female Veyrarch. The other kids laughed at her statement and began calling her \"Red Lantern\"because of her then-round face and fiery red hair.\n\nArchive code: 30D8F998EA18."
+    },
+    {
+      "id": 23,
+      "source": "knowledge_base/silent_ward.md",
+      "title": "Silent Ward",
+      "start_char": 0,
+      "end_char": 928,
+      "text": "# Silent Ward\n\nThe Silent Ward are covert operatives of capable kesh that are dispatched by their village leader. In Nelvar, they originally served directly under the Veyrarch and are picked from the skilled kesh.\n\nBecause of the darkness involved in a Silent Ward operative's career, one's personality determines their eligibility into the force, leading to exceptionally skilled kesh whose personalities don't match the organisation to be rejected. As early as the Hall of Lanterns, accomplished children are scouted to eventually join. While recruiting, kesh are hand picked by their village leader, for their individual capabilities and special skills. Age, background, gender, or previous rank bear no significance in this decision; however, in tradition, Nelvar kesh are not selected as Silent Ward unless they are at least 13 years old, with an 11-year-old Iver Morvek being a rare exception.\n\nArchive code: F0CFD87FACCE."
+    },
+    {
+      "id": 24,
+      "source": "knowledge_base/talren_spear.md",
+      "title": "Talren Spear",
+      "start_char": 0,
+      "end_char": 787,
+      "text": "# Talren Spear\n\nThe Talren Spear is a high concentration of lightning Mavren channelled around the user's hand.\n\nThe Talren Spear was created by Nerik Valdor after he failed to apply his spark affinity to the Orveth Sphere. He intended for the Talren Spear to be a weapon used only to protect friends and loved ones. To perform, the user first induces vital surge or greater vital surge which affords the production of immense Mavren, allowing them to gather lightning to their hand; the high concentration of electricity produces a sound reminiscent of many birds chirping. The lightning Mavren has been shown on occasions to damage the user's hand, peeling the skin and causing it to smoulder slightly, but this does not appear to actually be debilitating.\n\nArchive code: 1968EB077FCF."
+    },
+    {
+      "id": 25,
+      "source": "knowledge_base/taren_elvor.md",
+      "title": "Taren Elvor",
+      "start_char": 0,
+      "end_char": 788,
+      "text": "# Taren Elvor\n\nTaren Elvor is a kesh of Nelvar's Elvor house and a reincarnation and descendant of Thariel Arven. He became the bearer of Irmoran on the day of his birth — a fate that caused him to be shunned by most of Nelvar throughout his childhood. After joining Watch of Nerik, Taren worked hard to gain the village's acknowledgement all the while chasing his dream to become Veyrarch. In the following years, through many hardships and ordeals, he became a capable kesh, regarded as a hero both by the villagers, and soon after, the rest of the world, becoming known as the Guardian of Nelvar. He soon proved to be one of the main factors in winning the War of the Silent Dawn, leading him to achieve his dream and become the village's Seventh Veyrarch.\n\nArchive code: 10144833C706."
+    },
+    {
+      "id": 26,
+      "source": "knowledge_base/thalvek.md",
+      "title": "Thalvek",
+      "start_char": 0,
+      "end_char": 752,
+      "text": "# Thalvek\n\nThalvek is the hidden village of the Teral Province and was founded by the First Thalarch. As the village of one of the Five Border Provinces, Thalvek has a regent as its leader known as the Thalarch, of which there have been five in its history. The village is located in a range of tall mountains, and is literally hidden in the clouds. The Thalarch works in a large blue structure built into the tallest mountain. The standard attire for Thalvek kesh consists of a long, grey top which gathers just at the waist to give a sash-like appearance, with a matching coloured bottom. Over this they wear white, one-strapped flak jackets and arm as well as shin-guards. Many Thalvek kesh use spark shaping techniques.\n\nArchive code: 68C43D5EBF92."
+    },
+    {
+      "id": 27,
+      "source": "knowledge_base/vaelmar.md",
+      "title": "Vaelmar",
+      "start_char": 0,
+      "end_char": 1074,
+      "text": "# Vaelmar\n\nVaelmar is the hidden village of the Marven Province. As the village of one of the Five Border Provinces, Vaelmar has a regent as its leader known as the Varlith, of which there have been six in its history. The village is surrounded by a thick mist, with several mountains in the background, making it difficult to find by foreigners. Vaelmar's architecture is composed of several cylindrical buildings, with the Varlith's office being the widest and largest. Most of the buildings have vegetation growing on their roofs. The standard attire for Vaelmar kesh revolves around a pinstriped material which the kesh wear as bracers and greaves which merge into their sandals. Underneath this, they wear a full-black shirt and pants over which they wear the villages' standard grey flak jacket. Some also wear waist-guards. Many Vaelmar kesh use tide shaping techniques. Due to the village's high number of outcasts, Vaelmar has a subdivision of Silent Ward known as pursuers that are specifically tasked with eliminating these defectors.\n\nArchive code: BDD17421F6FF."
+    },
+    {
+      "id": 28,
+      "source": "knowledge_base/vekri.md",
+      "title": "Vekri",
+      "start_char": 0,
+      "end_char": 724,
+      "text": "# Vekri\n\nVekri, like Zarin, are one of the most common tools used by kesh. It is a black dagger — about the length of one's hand — with a handle wrapped in bandages and a ring-like pommel. While usually kept in a kesh's weapon pouch, they can also be kept on spring-loaded wires up the user's sleeve. Vekri generally are designed for thrusting and stabbing, but can be thrown as a projectile as well. Using it as ranged weapon, kesh can attach an explosive tag to the blade, causing it to detonate when it reaches near its target. This use of the weapon is known as an explosive Vekri. Vekri can also be empowered with Mavren, allowing them to be capable of cutting through solid wood and stone.\n\nArchive code: 9A9902D19A6F."
+    },
+    {
+      "id": 29,
+      "source": "knowledge_base/veylan_morvek.md",
+      "title": "Veylan Morvek",
+      "start_char": 0,
+      "end_char": 1129,
+      "text": "# Veylan Morvek\n\nVeylan Morvek is one of the last surviving members of Nelvar's Morvek house and a reincarnation and descendant of Vaerion Arven. After his older brother, Iver, slaughtered their house, Veylan made it his mission in life to avenge them by killing Iver. He is added to Seventh Watch upon becoming a kesh, and, through competition with his rival and best friend, Taren Elvor, Veylan starts developing his skills but eventually grows dissatisfied with his progress. He defects from Nelvar so that he can acquire the strength needed to exact his revenge and master the Mark of the Hollow Star. His years of seeking vengeance and the actions that followed became increasingly demanding, irrational, and isolated from others, leading him to be branded as an international criminal. After learning the truth of his brother's sacrifice, later proving instrumental in ending the War of the Silent Dawn, and being happily redeemed by Taren, Veylan decides to return to Nelvar and dedicate his life to help protect the village and its inhabitants, becoming referred to as the \"Shield of Nelvar\".\n\nArchive code: AACFE10D5FE1."
+    },
+    {
+      "id": 30,
+      "source": "knowledge_base/veyra_dalen.md",
+      "title": "Veyra Dalen",
+      "start_char": 0,
+      "end_char": 550,
+      "text": "# Veyra Dalen\n\nVeyra Elvor is a kesh of Nelvar. Formerly the heiress of the Dalen house, she lost the position upon being deemed unsuited for the responsibilities of leading the house. Nonetheless, Veyra persevered and from her observation of Taren Elvor especially, Veyra found an example to follow. Through her membership with Eighth Watch, she sought to become strong enough to change herself, if even a little at a time. A few years after the War of the Silent Dawn, Veyra joined the Elvor house after marrying Taren.\n\nArchive code: 901707D40B9E."
+    },
+    {
+      "id": 31,
+      "source": "knowledge_base/zarin.md",
+      "title": "Zarin",
+      "start_char": 0,
+      "end_char": 524,
+      "text": "# Zarin\n\nThey are sharpened, four-pronged metal stars, useful for throwing. They can also be used for close combat, but not very efficiently. Although small, they can be used to distract, pin down enemy kesh, or, if accurate enough, kill or incapacitate an enemy. They have an open circle in the centre, useful for grabbing with a finger, to avoid cutting oneself, or to put thread through. The circle is also beneficial to the weapon's overall aerodynamics, ensuring more accurate trajectories.\n\nArchive code: 5CF77CFCE851."
+    },
+    {
+      "id": 32,
+      "source": "knowledge_base/zerath.md",
+      "title": "Zerath",
+      "start_char": 0,
+      "end_char": 670,
+      "text": "# Zerath\n\nZerath is a kesh of Ostren and the youngest of the Three Heirs of Ostren. He was made the vessel-bearer of the Ormek before he was born, causing the villagers of Ostren to fear him as a monster. With nobody to connect to, Zerath grew up hating the world and looking out only for himself, giving his life meaning by killing anyone he came across. After being defeated by Taren Elvor — a vessel-bearer like himself who found strength in his friendships — Zerath began emulating him. He later became Ostren's Fifth Ostreth so that he can protect the village and all those who live there, dispelling the fears he cast on the villagers.\n\nArchive code: A1452089B7F6."
+    }
+  ]
+}

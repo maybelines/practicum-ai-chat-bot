@@ -224,3 +224,71 @@ python scripts/build_index.py "Как распределяется энерги�
 | Как распределяется энергия между копиями в Echo Weaving? | [echo_weaving.md](knowledge_base/echo_weaving.md), № 6 | The user's Mavren is evenly divided between themselves and their clones… |
 | Какую деревню защищают пустыня, песчаные бури и нехватка воды? | [ostren.md](knowledge_base/ostren.md), № 17 | Being surrounded by desert offers the village a natural deterrent against invasion… |
 | Кто считается самым сильным бойцом и лучшим целителем в мире? | [maelis.md](knowledge_base/maelis.md), № 10 | She is famed as the world's strongest kesh and its greatest healer. |
+
+# Задание 4. RAG-бот
+
+Сделал консольного бота в `scripts/rag_bot.py`. Он ищет ближайший фрагмент в готовом индексе через E5, добавляет его к вопросу и передаёт языковой модели. Для маленькой модели оставил один фрагмент, чтобы она не смешивала сведения из похожих статей.
+
+Для запуска на CPU взял небольшую [Qwen3-0.6B в формате GGUF Q4_K_M](https://huggingface.co/unsloth/Qwen3-0.6B-GGUF). Файл весов занимает около 397 МБ. Модель запускается через Transformers; при загрузке веса распаковываются в оперативной памяти.
+
+В промпте есть два примера по статье про Nerik Valdor: ответ по тексту и «Я не знаю», когда данных нет. Это few-shot. Для CoT задал короткий ответ по шагам: сначала факт из найденного текста, затем вывод. Вместе с ответом бот показывает файл и номер фрагмента.
+
+Если сходство с найденным фрагментом ниже 0,75, бот отвечает «Я не знаю». После генерации проверяется, что цитата действительно есть в тексте. Это не исключает все ошибки: маленькая модель может неправильно понять текст, а общий вопрос иногда остаётся без ответа.
+
+## Запуск
+
+В окружении проекта:
+
+```bash
+python -m pip install -r requirements-rag.txt
+python scripts/rag_bot.py
+```
+
+Для выхода — `/exit`. Можно задать один вопрос сразу:
+
+```bash
+python scripts/rag_bot.py "Какой код архива у Taren Elvor?"
+```
+
+При первом запуске скачиваются модель и токенизатор. Они сохраняются в `.cache/models/` и не попадают в Git. После скачивания бот работает без интернета с `HF_HUB_OFFLINE=1`.
+
+## Примеры диалогов
+
+Проверил бота на CPU. Ниже три ответа по базе и два случая, когда данных нет.
+
+```text
+Вы: Какой код архива у Taren Elvor?
+Бот: 1. В источнике: «Archive code: 10144833C706.» [1]
+2. Ответ: код архива Taren Elvor — 10144833C706 [1].
+
+Источник:
+[1] knowledge_base/taren_elvor.md, фрагмент 25, символы 0:788
+```
+
+```text
+Вы: Кто создал Orveth Sphere?
+Бот: 1. В источнике: «Davor Elsen». [1]
+2. Ответ: Davor Elsen — создатель Orveth Sphere [1].
+
+Источник:
+[1] knowledge_base/orveth_sphere.md, фрагмент 16, символы 0:659
+```
+
+```text
+Вы: Как делится Mavren при создании одной копии техникой Echo Weaving?
+Бот: 1. В источнике: «Mavren is evenly divided between themselves and their clones: creating one clone will give it half the user's Mavren, creating two clones will give each a third of the user's Mavren, and so on.» [1]
+2. Ответ: при создании одной копии техникой Echo Weaving, Mavren делится на две части — половина, а при создании двух копий — на три части.
+
+Источник:
+[1] knowledge_base/echo_weaving.md, фрагмент 6, символы 0:628
+```
+
+```text
+Вы: Какой любимый цвет у Taren Elvor?
+Бот: Я не знаю
+```
+
+```text
+Вы: Какая столица Франции?
+Бот: Я не знаю
+```

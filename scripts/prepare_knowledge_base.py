@@ -1,5 +1,3 @@
-"""Prepare renamed articles from Naruto Fandom for a local knowledge base."""
-
 import hashlib
 import json
 from pathlib import Path
@@ -51,7 +49,7 @@ def clean_article(html):
     for extra in body.select("table, aside, sup, script, style, figure, .thumb, .gallery, h2, h3, .mw-references-wrap"):
         extra.decompose()
     text = body.get_text(" ", strip=True)
-    # Remove Japanese spellings, translations, footnotes and extra spaces.
+    # В скобках обычно идут японские написания и переводы названий.
     while re.search(r"\([^()]*\)", text):
         text = re.sub(r"\([^()]*\)", "", text)
     text = re.sub(r"\[\s*\d+\s*\]", "", text)
@@ -72,7 +70,7 @@ def clean_article(html):
 def main():
     terms = json.loads((ROOT / "terms_map.json").read_text(encoding="utf-8"))
     replacements = {key.casefold(): value for key, value in terms.items()}
-    # Longer names come first; a single pass prevents repeated replacement.
+    # Сначала заменяем полные имена, затем короткие.
     names = sorted(terms, key=len, reverse=True)
     pattern = re.compile(r"(?<!\w)(?:" + "|".join(re.escape(name) for name in names) + r")(?!\w)", re.I)
     output = ROOT / "knowledge_base"
@@ -89,7 +87,7 @@ def main():
         text = re.sub(r"\bthe the\b", "the", text)
         name = terms[title]
         filename = re.sub(r"[^a-z0-9]+", "_", name.lower()).strip("_") + ".md"
-        # A new archive code gives each article a fact absent from the source wiki.
+        # Код нужен для проверки: его нет в исходной статье.
         code = hashlib.sha256(("elvar-archive:" + name).encode()).hexdigest()[:12].upper()
         document = f"# {name}\n\n{text}\n\nArchive code: {code}.\n"
         (output / filename).write_text(document, encoding="utf-8")

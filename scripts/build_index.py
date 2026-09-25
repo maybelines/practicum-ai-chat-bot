@@ -27,7 +27,9 @@ def build_index(model):
         is_separator_regex=True,
     )
     chunks = []
-    for path in sorted((ROOT / "knowledge_base").glob("*.md")):
+    paths = sorted((ROOT / "knowledge_base").glob("*.md"))
+    paths += sorted((ROOT / "knowledge_base").glob("*.txt"))
+    for path in paths:
         text = path.read_text(encoding="utf-8")
         title = text.splitlines()[0].lstrip("# ")
         start = -1
@@ -68,6 +70,8 @@ def search(model, query):
     data = json.loads((INDEX_DIR / "chunks.json").read_text(encoding="utf-8"))
     if data["model"] != MODEL_NAME or len(data["chunks"]) != index.ntotal:
         raise ValueError("Rebuild the index: model or chunk count does not match")
+    if index.ntotal == 0:
+        return []
     vector = model.encode([f"query: {query}"], normalize_embeddings=True)
     scores, ids = index.search(vector, min(3, index.ntotal))
     return [(data["chunks"][int(i)], float(score)) for i, score in zip(ids[0], scores[0])]

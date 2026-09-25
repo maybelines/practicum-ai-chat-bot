@@ -1,0 +1,10 @@
+services:
+  bot:
+    build: .
+    stdin_open: true
+    tty: true
+    volumes:
+      - models:/app/.cache/models
+
+volumes:
+  models:

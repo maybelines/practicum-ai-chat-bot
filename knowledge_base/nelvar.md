@@ -1,0 +1,5 @@
+# Nelvar
+
+Nelvar is the hidden village of the Velden Province. As the village of one of the Five Border Provinces, Nelvar has a regent as its leader known as the Veyrarch, of which there have been seven in its history. Nelvar resides deep within a forest at the base of a mountain known as the Mount Ordal, which has the faces of all those who have taken the office of Veyrarch engraved on it. The largest of all villages in the kesh world, it is surrounded on all sides by enormous walls. While generally seen as the most powerful of the kesh villages, possessing the greatest military force in the Velden Province. Nelvar has enjoyed many years of relative peace and stability. The standard attire for Nelvar kesh consists of blue or black shirts which may or may not have swirl patterns on the shoulders, along with matching coloured pants under a green flak jacket which also has a red swirl on the back, and pockets on the chest area. They also tend to wrap bandages around their legs. Many Nelvar kesh use ember shaping techniques.
+
+Archive code: 12666FD8C9EF.

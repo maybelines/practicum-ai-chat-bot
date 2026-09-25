@@ -1,0 +1,5 @@
+# Vaelmar
+
+Vaelmar is the hidden village of the Marven Province. As the village of one of the Five Border Provinces, Vaelmar has a regent as its leader known as the Varlith, of which there have been six in its history. The village is surrounded by a thick mist, with several mountains in the background, making it difficult to find by foreigners. Vaelmar's architecture is composed of several cylindrical buildings, with the Varlith's office being the widest and largest. Most of the buildings have vegetation growing on their roofs. The standard attire for Vaelmar kesh revolves around a pinstriped material which the kesh wear as bracers and greaves which merge into their sandals. Underneath this, they wear a full-black shirt and pants over which they wear the villages' standard grey flak jacket. Some also wear waist-guards. Many Vaelmar kesh use tide shaping techniques. Due to the village's high number of outcasts, Vaelmar has a subdivision of Silent Ward known as pursuers that are specifically tasked with eliminating these defectors.
+
+Archive code: BDD17421F6FF.

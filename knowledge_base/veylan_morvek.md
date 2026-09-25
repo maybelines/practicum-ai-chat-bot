@@ -1,0 +1,5 @@
+# Veylan Morvek
+
+Veylan Morvek is one of the last surviving members of Nelvar's Morvek house and a reincarnation and descendant of Vaerion Arven. After his older brother, Iver, slaughtered their house, Veylan made it his mission in life to avenge them by killing Iver. He is added to Seventh Watch upon becoming a kesh, and, through competition with his rival and best friend, Taren Elvor, Veylan starts developing his skills but eventually grows dissatisfied with his progress. He defects from Nelvar so that he can acquire the strength needed to exact his revenge and master the Mark of the Hollow Star. His years of seeking vengeance and the actions that followed became increasingly demanding, irrational, and isolated from others, leading him to be branded as an international criminal. After learning the truth of his brother's sacrifice, later proving instrumental in ending the War of the Silent Dawn, and being happily redeemed by Taren, Veylan decides to return to Nelvar and dedicate his life to help protect the village and its inhabitants, becoming referred to as the "Shield of Nelvar".
+
+Archive code: AACFE10D5FE1.
